@@ -18,7 +18,7 @@ from Boltnew.sheerid_verifier import SheerIDVerifier as BoltnewVerifier
 from utils.messages import get_insufficient_balance_message, get_verify_usage_message
 
 # 尝试导入并发控制，如果失败则使用空实现
-    try:
+try:
     from utils.concurrency import get_verification_semaphore
 except ImportError:
     # 如果导入失败，创建一个简单的实现
